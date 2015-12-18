@@ -1,0 +1,349 @@
+/* ====================================================================== *
+      [1] MAIN 
+ * ====================================================================== */
+  
+html {
+  margin-right: 0 !important;
+  overflow: visible !important;
+}
+body {
+  font-family: 'Roboto';
+  -webkit-transition: margin 0.4s ease;
+  -moz-transition: margin 0.4s ease;
+  -o-transition: margin 0.4s ease;
+  transition: margin 0.4s ease;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: 'Roboto';
+  font-weight: 500;
+}
+/* ====================================================================== *
+      [2] LANGUAGE BAR 
+ * ====================================================================== */
+
+
+#brand-bar {
+  background: #f2f2f2;
+  margin: 0;
+  padding: 0;
+  border: none !important;
+  border-bottom: #00adef solid 5px !important;
+  height: 41px;
+  min-height: inherit;
+}
+.navbar-fixed-top {
+  top: 0;
+  border-width: 0 0 1px;
+}
+
+@media (min-width: 768px) {
+.navbar-fixed-top, .navbar-fixed-bottom {
+  border-radius: 0;
+}
+.navbar-fixed-top, .navbar-fixed-bottom {
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+}
+
+@media (min-width: 768px) {
+.navbar {
+  border-radius: 0;
+}
+.navbar {
+  position: relative;
+  min-height: auto;
+  margin-bottom: 18px;
+  border: 1px solid transparent;
+}
+#brand-bar .brandbar-header {
+  padding-top: 10px;
+}
+}
+#brand-bar .brandbar-header a {
+  padding: 0;
+  font-size: 12.35px;
+  line-height: 17.03px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  color: black;
+}
+
+@media (min-width: 768px) {
+.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
+  margin-left: 0;
+}
+.navbar-default .navbar-brand {
+  color: #777;
+}
+}
+
+@media (max-width: 692px) {
+#brand-bar .brandbar-header a {
+  margin-top: 10px;
+}
+.header {
+  font-size: 24px;
+  padding-top: 20px !important;
+}
+.lead {
+  font-size: 15px;
+  display: flex;
+  padding-bottom: 0 !important;
+}
+.logo {
+  width: 104px;
+  margin-top: 0 !important;
+  margin-bottom: 12px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  float: none;
+}
+header {
+  margin-top: 53px;
+}
+.headerText {
+  margin-left: 0 !important;
+  text-align: center;
+}
+}
+/* Adds home icon at the top */
+
+#brand-bar .brandbar-header a.navbar-brand:before {
+  font-family: FontAwesome;
+  color: black;
+  content: "\f015";
+  font-size: 18.07px;
+  line-height: 0.9;
+  margin-right: 7.8px;
+  float: left;
+  -webkit-font-smoothing: antialiased;
+}
+/* ====================================================================== *
+      [3] HEADER 
+ * ====================================================================== */
+
+.title {
+  margin-bottom: 80px;
+}
+.title h1 {
+  margin-top: 5px !important;
+  text-transform: uppercase;
+}
+.title img {
+  margin-right: 18px;
+  margin-top: 2px;
+}
+/* ====================================================================== *
+      [4] BREADCRUMB 
+ * ====================================================================== */
+
+.breadcrumb > li {
+  display: inline-block;
+}
+.breadcrumb {
+  padding: 0px 0px;
+  margin-bottom: 18px;
+  list-style: none;
+  background-color: transparent;
+  border-radius: 4px;
+}
+ol.breadcrumb > li + li:before {
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.breadcrumb > li + li::before {
+  content: " ";
+  padding: 0px 5px;
+  color: rgb(77, 77, 77);
+}
+/* ====================================================================== *
+      [5] PAGE TITLE 
+ * ====================================================================== */
+
+h1.page-header {
+  margin-bottom: 18px;
+}
+h1.page-header {
+  border-bottom: none;
+  margin-top: 0;
+  margin-bottom: 13px;
+  padding-left: 2px;
+  padding-bottom: 0;
+}
+.page-header {
+  margin: 36px 0 18px;
+}
+/* ====================================================================== *
+      [6] CONTENT
+ * ====================================================================== */
+
+.content {
+  width: 1160px; /*1024px*/
+  margin: auto;
+}
+.section {
+  width: 100%;
+  padding: 35px 0px 50px;
+}
+.label h2 {
+  color: white !important;
+  font-size: 20px;
+  background: #00aeef;
+  display: inline-block;
+  padding: 9px;
+  text-transform: uppercase;
+  font-size: 18px !important;
+}
+.label {
+  padding: 0 !important;
+}
+.rowItem {
+  margin-bottom: 30px;
+}
+.content-video .row {
+  margin-bottom: 40px;
+}
+/* ====================================================================== *
+      [7] FOOTER
+ * ====================================================================== */
+  
+.footer .list-inline .footer-brand {
+  font-size: 'Roboto';
+  height: 21px;
+  margin-top: -6px;
+  margin-bottom: 10px;
+  background: url(../img/un-logo-footer.png) left top no-repeat;
+}
+.footer .list-inline .footer-brand a {
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 21px;
+  letter-spacing: -0.02em;
+  color: #4d4d4d;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: block;
+  padding-left: 30px;
+}
+.footer #block-menu-menu-footer-links ul.nav li {
+  float: left;
+  padding-right: 6.5px;
+  margin-right: 5.85px;
+  border-right: #737373 solid 1px;
+  line-height: 1;
+}
+.footer ul.nav li {
+  padding: 0;
+  margin: 0 0 6.5px 0;
+}
+.footer ul.nav li a {
+  padding: 0;
+  margin: 0;
+  color: black;
+}
+.footer ul.nav li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+}
+.nav > li {
+  position: relative;
+  display: block;
+}
+footer {
+  margin-top: 50px;
+  margin-bottom: 25px;
+}
+/* ====================================================================== *
+      [8] SLIDER
+ * ====================================================================== */
+
+
+#owl-slider .item img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.owl-buttons i {
+  position: absolute;
+  top: 37%;
+  z-index: 999;
+  color: #333333;
+  font-size: 55px;
+  font-weight: bolder;
+  line-height: 1.5;
+  margin: 0 auto;
+  text-decoration: none;
+  color: #fff;
+}
+.owl-prev i {
+  left: 20px;
+}
+.owl-next i {
+  right: 20px;
+}
+.overlay {
+  position: absolute;
+  top: 65%;
+  text-align: right;
+  right: 20px;
+  color: white !important;
+}
+.overlay h2 {
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 600;
+  color: white;
+  letter-spacing: 1px;
+}
+.overlay p {
+  color: white;
+  font-size: 20px;
+}
+
+/* ====================================================================== *
+      [9] RESPONSIVE DESIGN
+ * ====================================================================== */
+
+@media only screen and (max-width: 990px) {
+.content {
+  width: 100%;
+  padding: 0px 10px !important;
+}
+}
+
+@media only screen and (max-width: 760px) {
+.title {
+  margin-top: 40px;
+  margin-bottom: -15px !important;
+}
+.title img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+.title .content > .pull-left {
+  float: none !important;
+}
+.title h1 {
+  text-align: center;
+  font-size: 26px;
+}
+.title p {
+  text-align: center;
+}
+.content-video .item {
+  margin-bottom: 40px;
+}
+.content-video .row {
+  margin-bottom: 20px;
+}
+}
